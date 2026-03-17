@@ -11,7 +11,7 @@ import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.*;
 
 @Controller
-@RequestMapping("/books")
+@RequestMapping("/")
 public class BookController {
 
     private final BookService bookService;
