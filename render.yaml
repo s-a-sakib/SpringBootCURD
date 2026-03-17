@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: spring-boot-crud
+    env: docker
+    plan: free
+    region: oregon
+    envVars:
+      - key: SPRING_DATASOURCE_URL
+        value: jdbc:postgresql://ep-bold-star-amnisl4h-pooler.c-5.us-east-1.aws.neon.tech/neondb?sslmode=require
+      - key: SPRING_DATASOURCE_USERNAME
+        value: neondb_owner
+      - key: SPRING_DATASOURCE_PASSWORD
+        value: npg_Tz6SJptnLoq4
+      - key: PORT
+        value: 8080
